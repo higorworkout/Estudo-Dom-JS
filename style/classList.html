@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu blog</h1>
+    </header>
+
+    <p>document de text </p>
+    <script>
+        // Alterando estilos 
+        // class list
+        const element = document.querySelector('body')
+        element.classList.add('active' , 'green')
+        console.log(element.classList)
+       // element.classList.remove('active')
+        element.classList.toggle('active')
+    </script>
+</body>
+</html>

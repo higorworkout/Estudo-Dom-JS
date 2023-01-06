@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h2>The createElement() Method</h2>
+
+    <p>Create a p element with some text:</p>
+
+    <div id="chd">
+
+    </div>
+
+    <button onclick="myFunction()">Append</button>
+
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+      </ul>
+
+    <script>
+        // Create element
+        const para = document.createElement("p");
+        para.innerText = "This is a paragraph"
+
+        document.getElementById("chd").appendChild(para);
+
+        function myFunction() {
+            const node = document.createElement("li")
+
+            const textnode = document.createTextNode("Water")
+
+            node.appendChild(textnode)
+
+            document.getElementById("myList").appendChild(node)
+        }
+    </script>
+
+</body>
+</html>

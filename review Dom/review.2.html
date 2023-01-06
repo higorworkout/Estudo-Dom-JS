@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulando</title>
+</head>
+<body>
+
+    <header class="bg">
+        <h1>Meu blog</h1>
+    </header>
+   <script>
+    // Manipulando elementos
+    // atributos
+    const header = document.querySelector('header')
+    header.setAttribute('id' , 'header')
+    const headerID = document.querySelector('#header')
+    console.log(headerID.getAttribute('id') )
+    header.removeAttribute('id')
+    header.setAttribute('class', 'bg header')
+   </script> 
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando e add element</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog - Discover</h1>
+    </header>
+    <script>
+     // Criando e adicionando elementos 
+     
+     // CreateElement
+     const par = document.createElement("h1");
+     par.innerHTML = "Testando a segunda tentativa <strong> Ver se vai </strong>";
+
+     //append - acrescentar prepend  - presceder element
+     const body = document.querySelector('body')
+     body.prepend(par)
+
+     par.style.backgroundColor = "lightgray"
+     par.style.textAlign = "center"
+
+    </script>
+</body>
+</html>
